@@ -44,7 +44,7 @@ reg add "HKLM\SOFTWARE\Microsoft\Office\Common\ClientTelemetry" /v "DisableTelem
 
 :: Activar Office con MAS (Ohook)
 echo Activando Office con MAS (Ohook)...
-powershell -Command "irm https://get.activated.win | iex; MAS; ohook"
+powershell -Command "irm https://get.activated.win | iex"
 
 :: Limpiar
 del "%XML%" 2>nul
